@@ -1,0 +1,11 @@
+.card
+{
+	width: 400px;
+	background-color: black;
+	text-align: center;
+	
+}
+.card,p
+{
+	color: white;
+}

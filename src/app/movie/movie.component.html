@@ -1,0 +1,29 @@
+<md-grid-list cols="3" rowHeight="1:3">
+<div *ngFor= "let movie of movie">
+<md-grid-tile>
+
+<md-card class="card">
+  <md-card-header>
+    <div md-card-avatar></div>
+
+    <md-card-title><h2>{{ movie.Title }}</h2> </md-card-title>
+    <md-card-subtitle>id: {{ movie.imdbID }} </md-card-subtitle>
+    <md-card-subtitle>year: {{ movie.Year }}</md-card-subtitle>
+
+  </md-card-header>
+  <img md-card-image src="{{ movie.Poster }}" >
+  <md-card-content>
+    <p>
+     Movies, also known as films, are a type of visual communication which use moving pictures and sound to tell stories or inform (help people to learn). People in every part of the world watch movies as a type of entertainment, a way to have fun. For some people, fun movies can mean movies that make them laugh, while for others it can mean movies that make them cry, or feel afraid.
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+
+  </md-card-actions>
+</md-card>
+</md-grid-tile>
+</div>
+
+</md-grid-list>
